@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { cart, mockCart } from '@/utils/util'
 
-interface CartState {
+export interface CartState {
     card: cart[],
     count: number,
     totalPrice: number

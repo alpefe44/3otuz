@@ -5,13 +5,13 @@ import { Search, ShoppingBasket, ShoppingCart, User } from 'lucide-react'
 import Image from 'next/image'
 import LanguageMenu from './LanguageMenu'
 import { useSelector } from 'react-redux'
-
+import { RootState } from '@/lib/store'
 
 export default function Navbar() {
 
     const [isCartOpen, setIsCartOpen] = useState(false);
 
-    const cart = useSelector((state) => state.cart)
+    const cart = useSelector((state: RootState) => state.cart)
 
     return (
         <nav className="flex justify-between items-center w-[100%] md:max-w-[1200px] mx-auto p-4  ">

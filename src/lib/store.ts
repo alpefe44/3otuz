@@ -7,6 +7,5 @@ export const store = configureStore({
     },
 });
 
-// RootState ve AppDispatch tiplerini çıkar
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
